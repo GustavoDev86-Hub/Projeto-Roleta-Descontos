@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta de descontos Avenida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="" alt="Logo da loja" srcset="logo">
+    </header>
+
+
+    <main class="container">
+        <section class="section-form">
+            <h1>Gire e garanta seu desconto</h1>
+            <form id="form-lead">
+                <div class="input-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="termos" required>
+                    <label for="termos">Aceito os termos e condições</label>
+                </div>
+                <button type="submit" id="btn-girar">Girar a Roleta</button>
+            </form>
+        </section>
+
+        <section class="section-roleta">
+            <div class="ponteiro"></div>
+            <canvas id="wheel" width="400" height="400"></canvas>
+        </section>
+    </main>
+
+    <div id="modal-resultado" class="modal modal-hidden">
+        <div class="modal-content">
+            <h2>Parabéns!! 🎉🎉 </h2>
+            <p id="texto-prêmio">Você ganhou R$ 50</p>
+            <div id="código-cupom">CUPOM50</div>
+            <button id="btn-resgatar">Resgatar Cupom</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <section class="FAQ">
+            <h3>Dúvidas Frequentes</h3>
+        </section>
+
+        <p>&copy; Direitos reservados 2026 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

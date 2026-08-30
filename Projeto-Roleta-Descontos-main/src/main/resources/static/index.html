@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roleta de descontos Avenida</title>
+    <title>Roleta Avenida</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,18 +14,34 @@
 
     <main class="container">
         <section class="section-form">
-            <h1>Gire e garanta seu desconto</h1>
+            <h1>Sua chance é agora!</h1>
+            <h5>Cadastre-se e garanta o seu desconto.</h5>
             <form id="form-lead">
+                <div class="input-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo" required>
+                </div>
+
                 <div class="input-group">
                     <label for="cpf">CPF</label>
                     <input type="text" id="cpf" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
                 </div>
 
                 <div class="checkbox-group">
                     <input type="checkbox" id="termos" required>
                     <label for="termos">Aceito os termos e condições</label>
                 </div>
-                <button type="submit" id="btn-girar">Girar a Roleta</button>
+                <button type="submit" id="btn-girar">Gire agora</button>
             </form>
         </section>
 

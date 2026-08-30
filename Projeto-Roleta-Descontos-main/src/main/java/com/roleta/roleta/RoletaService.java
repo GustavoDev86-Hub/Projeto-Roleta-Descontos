@@ -6,7 +6,7 @@ import java.util.Random;
 @Service
 public class RoletaService {
 
-    private final int[] valoresPossiveis = {5, 10, 30, 50};
+    private final int[] valoresPossiveis = {3, 5, 10, 40, 50};
     private final Random random = new Random();
 
     public int girarRoleta() {

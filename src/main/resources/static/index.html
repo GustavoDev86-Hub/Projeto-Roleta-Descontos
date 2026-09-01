@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="header">
-        <img src="" alt="Logo da loja" srcset="logo">
+        <img src="logo.png" alt="Logo da loja">
     </header>
 
+    <section class="banner">
+        <h2>Passo a passo para participar</h2>
+        <div class="passos">
+            <span>1. Preencha seus dados</span>
+            <span>2. Gire a roleta</span>
+            <span>3. Resgate ou gire de novo</span>
+            <span>4. Use em nossas lojas</span>
+        </div>
+    </section>
 
-    <main class="container">
+    <!-- Card Principal -->
+    <main class="main-roleta">
+        <!-- Formulário -->
         <section class="section-form">
             <h1>Sua chance é agora!</h1>
-            <h5>Cadastre-se e garanta o seu desconto.</h5>
+            <p>Cadastre-se e garanta o seu desconto.</p>
+            
             <form id="form-lead">
                 <div class="input-group">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Seu nome completo" required>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
                 </div>
 
                 <div class="input-group">
@@ -41,31 +54,34 @@
                     <input type="checkbox" id="termos" required>
                     <label for="termos">Aceito os termos e condições</label>
                 </div>
-                <button type="submit" id="btn-girar">Gire agora</button>
+
+                <button type="submit" id="btn-girar">Girar agora</button>
             </form>
         </section>
 
+        <!-- Roleta -->
         <section class="section-roleta">
             <div class="ponteiro"></div>
-            <canvas id="wheel" width="400" height="400"></canvas>
+            <canvas id="wheel" width="350" height="350"></canvas>
         </section>
     </main>
 
+    <!-- Modal de Resultado -->
     <div id="modal-resultado" class="modal modal-hidden">
         <div class="modal-content">
-            <h2>Parabéns!! 🎉🎉 </h2>
-            <p id="texto-prêmio">Você ganhou R$ 50</p>
-            <div id="código-cupom">CUPOM50</div>
-            <button id="btn-resgatar">Resgatar Cupom</button>
+            <h2>Parabéns! 🎉</h2>
+            <p id="texto-premio">Você ganhou R$ 50 de desconto!</p>
+            <div id="codigo-cupom">CUPOM50</div>
+            <div class="modal-acoes">
+                <button id="btn-resgatar">Resgatar Cupom</button>
+                <button id="btn-girar-novamente">Girar Novamente</button>
+            </div>
         </div>
     </div>
 
     <footer class="footer">
-        <section class="FAQ">
-            <h3>Dúvidas Frequentes</h3>
-        </section>
-
-        <p>&copy; Direitos reservados 2026 </p>
+        <h3>Dúvidas Frequentes</h3>
+        <p>&copy; Direitos reservados 2026</p>
     </footer>
 
     <script src="script.js"></script>

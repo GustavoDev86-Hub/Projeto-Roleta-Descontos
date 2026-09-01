@@ -6,6 +6,7 @@ public class RoletaRequestDTO {
     private String cpf;
     private String telefone;
     private String email;
+    private int tentativasRestantes; // Campo adicionado para sincronizar com o front-end
 
     public String getNome() { 
         return nome; 
@@ -33,5 +34,13 @@ public class RoletaRequestDTO {
     }
     public void setEmail(String email) { 
         this.email = email; 
+    }
+
+    public int getTentativasRestantes() {
+        return tentativasRestantes;
+    }
+
+    public void setTentativasRestantes(int tentativasRestantes) {
+        this.tentativasRestantes = tentativasRestantes;
     }
 }
